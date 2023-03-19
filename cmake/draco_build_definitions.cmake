@@ -147,7 +147,6 @@ macro(draco_set_build_definitions)
   endif()
 
   if(EMSCRIPTEN)
-    draco_check_emscripten_environment()
     draco_get_required_emscripten_flags(
       FLAG_LIST_VAR_COMPILER draco_base_cxx_flags
       FLAG_LIST_VAR_LINKER draco_base_exe_linker_flags)
